@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='./assets/images/logo(2).jpg' rel='shortcut icon' type='image/png'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <script src="/javascript/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+
+    
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Praise&family=Roboto+Slab:wght@300;400;500;600&family=Roboto:ital,wght@1,100&family=Satisfy&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Praise&family=Roboto:ital,wght@1,100&family=Satisfy&display=swap" rel="stylesheet">
+    
+    <title>Sản phẩm</title>
+</head>
+<body>
+    <div class="wrapper ">
+        <button class="scroll " ><i class="fas fa-arrow-up"></i></button>
+        <header class="header">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <div class="col l-3">
+                        <div class="header__logo">
+                            <a href="./login-index.html" class="header__logo-link">
+                                <img src="./assets/images/logo(2).jpg" alt="" class="header__logo-img">
+                            </a>
+                            <span class="header__logo-text">ShoesShop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <div class="col l-10">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="login-index.html" class="nav__item-link">trang chủ</a></li>
+                            <li class="nav__item"><a href="/login-dashboard.html" class="nav__item-link">dashboard</a></li>
+                            <li class="nav__item"><a href="#" class="nav__item-link active">sản phẩm</a></li>
+                            <li class="nav__item"><a href="/profile.html" class="nav__item-link">tài khoản</a></li>
+                            <li class="nav__item"><a href="/login-contact.html" class="nav__item-link">liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-2">
+                        <div class="nav-icon">
+                            <div class="nav__search">
+                                <i class="fas fa-search nav__search-icon"></i>
+                                <form action="/login-sanpham.html" class="nav__search-form">
+                                    <input class="nav__search-input" type="text" placeholder="Gõ tìm kiếm..." required>
+                                    <button type="submit" class="nav__search-submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="nav__cart">
+                                <a href="/giohang.html" class="nav__cart-link">
+                                    <i class="fas fa-shopping-basket nav__cart-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="theme-background">
+            <div class="theme-title">tất cả sản phẩm</div>
+        </div>
+        
+        <section class="body">
+            <section class="frag">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="frag__container">
+                                <li class="home">
+                                    <a href="/login-index.html" class="frag__link"> Trang chủ</a>
+                                    <span class="gach">/</span>
+                                </li>
+                                <li>
+                                    <span>Tất cả sản phẩm</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="grid wide">
+                <div class="row ">
+                    <div class="col-sm-3">
+                        <div class="category">
+                            <div class="category__colection">
+                                <h2 class="colection__title">
+                                    <span class="colection__title-head">danh mục sản phẩm</span>
+                                </h2>
+                                <div class="colection__content">
+                                    <ul class="colection__content-list">
+                                        <li class="colection__content-item">
+                                            <a href="#" class="colection__content-link">Sản phẩm mới</a>
+                                        </li>
+                                        <li class="colection__content-item">
+                                            <a href="#" class="colection__content-link">Sản phẩm nổi bật</a>
+                                        </li>
+                                        <li class="colection__content-item">
+                                            <a href="#" class="colection__content-link">Nike Air Force 1</a>
+                                        </li>
+                                        <li class="colection__content-item">
+                                            <a href="#" class="colection__content-link">Nike Air Jordan 1</a>
+                                        </li>
+                                        <li class="colection__content-item">
+                                            <a href="#" class="colection__content-link">Nike Nam</a>
+                                        </li>
+                                        <li class="colection__content-item">
+                                            <a href="#" class="colection__content-link">Nike Nữ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="category__selling">
+                                <div class="colection__title">
+                                    <h2 class="colection__title-head">sản phẩm bán chạy</h2>
+                                </div>
+                                <div class="selling__product">
+                                    <div class="selling__product-box">
+                                        <div class="selling__product-image">
+                                            <a href="/login-san-pham-nike-all-white.html" class="selling__product-link">
+                                                <img src="./assets/images/af1-allw.png" alt="" class="selling__product-img">
+                                            </a>
+                                        </div>
+                                        <div class="selling__product-content">
+                                            <a href="/login-san-pham-nike-all-white.html"class="selling__product-title">Nike Air Force 1 All White</a>
+                                            <div class="selling__product-price-box">
+                                                <span class="selling__product-price">1.068.000đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selling__product-box">
+                                        <div class="selling__product-image">
+                                            <a href="/login-san-pham-para-noise.html" class="selling__product-link">
+                                                <img src="./assets/images/par-noise.png" alt="" class="selling__product-img">
+                                            </a>
+                                        </div>
+                                        <div class="selling__product-content">
+                                            <a href="/login-san-pham-para-noise.html"class="selling__product-title">Nike Air Force 1 Para-Noise</a>
+                                            <div class="selling__product-price-box">
+                                                <span class="selling__product-price">1.380.000đ</span>
+                                                <span class="selling__product-price-sale">1.467.000đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selling__product-box">
+                                        <div class="selling__product-image">
+                                            <a href="/login-san-pham-unc.html" class="selling__product-link">
+                                                <img src="./assets/images/UNC.jpg" alt="" class="selling__product-img">
+                                            </a>
+                                        </div>
+                                        <div class="selling__product-content">
+                                            <a href="/login-san-pham-unc.html"class="selling__product-title">Nike Air Jordan 1 UNC</a>
+                                            <div class="selling__product-price-box">
+                                                <span class="selling__product-price">1.179.000đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selling__product-box">
+                                        <div class="selling__product-image">
+                                            <a href="/login-san-pham-jordan-high-black.html" class="selling__product-link">
+                                                <img src="./assets/images/jordanhighblackwhite.jpg" alt="" class="selling__product-img">
+                                            </a>
+                                        </div>
+                                        <div class="selling__product-content">
+                                            <a href="/login-san-pham-jordan-high-black.html"class="selling__product-title">Nike Jordan 1 High Black</a>
+                                            <div class="selling__product-price-box">
+                                                <span class="selling__product-price">1.579.000đ</span>
+                                                <span class="selling__product-price-sale">1.600.000đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="colection__title no-bottom">
+                            <h2 class="colection__title-head product--left" > tất cả sản phẩm</h2>
+                        </div>  
+                        <div class="product-list active" id="menu1">
+                            <div class="row ">
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-para-noise.html" class="product__preview-link">
+                                                <img src="./assets/images/par-noise.png" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.380.000đ</span>
+                                                <span class="product__price-sale">1.467.000đ</span>
+                                            </div>
+                                            <a href="/login-san-pham-para-noise.html"class="product__name">Nike Air Force 1 Para-Noise</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-nike-all-white.html" class="product__preview-link">
+                                                <img src="./assets/images/af1-allw.png" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.068.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-nike-all-white.html"class="product__name">Nike Air Force 1 All White</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-high-black.html" class="product__preview-link">
+                                                <img src="./assets/images/jordanhighblackwhite.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.579.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-high-black.html"class="product__name">Nike Jordan 1 High Black</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-retro-dior.html" class="product__preview-link">
+                                                <img src="./assets/images/retroOG.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.467.000đ</span>
+                                                <span class="product__price-sale">1.600.000đ</span>
+                                            </div>
+                                            <a href="/login-san-pham-retro-dior.htmll"class="product__name">Nike Jordan 1 Retro OG</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-legacy.html" class="product__preview-link">
+                                                <img src="./assets/images/legacy.webp" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.269.000đ</span>
+                                                <span class="product__price-sale">1.300.000đ</span>
+                                            </div>
+                                            <a href="/login-san-pham-legacy.htmll"class="product__name">Nike Air Jordan Legacy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-high-og.html" class="product__preview-link">
+                                                <img src="./assets/images/ogfemale.webp" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.349.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-high-og.html"class="product__name">Nike Air Jordan 1 High OG</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-unc.html" class="product__preview-link">
+                                                <img src="./assets/images/UNC.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.179.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-unc.html"class="product__name">Nike Air Jordan 1 UNC</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-mid.html" class="product__preview-link">
+                                                <img src="./assets/images/mid.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">876.000đ</span>
+                                                <span class="product__price-sale">1.120.000đ</span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-mid.html"class="product__name">Nike Air Jordan 1 Mid</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-low-shadow.html" class="product__preview-link">
+                                                <img src="./assets/images/lowShadow.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.299.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-low-shadow.htmll"class="product__name">Nike Air Jordan 1 Low Shadow</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="product-list" id="menu2">
+                            <div class="row ">
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-retro-dior.html" class="product__preview-link">
+                                                <img src="./assets/images/retrodior.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.467.000đ</span>
+                                                <span class="product__price-sale">1.600.000đ</span>
+                                            </div>
+                                            <a href="/login-san-pham-retro-dior.html"class="product__name">Nike Air Jordan 1 Retro Dior</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-unc.html" class="product__preview-link">
+                                                <img src="./assets/images/UNC.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.179.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-unc.html"class="product__name">Nike Air Jordan 1 UNC</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-low-shadow.html" class="product__preview-link">
+                                                <img src="./assets/images/lowShadow.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.299.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-low-shadow.html"class="product__name">Nike Air Jordan 1 Low Shadow</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-high-black.html" class="product__preview-link">
+                                                <img src="./assets/images/jordanhighblackwhite.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.579.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-high-black.html"class="product__name">Nike Air Jordan 1 High Black</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-high-og.html" class="product__preview-link">
+                                                <img src="./assets/images/ogfemale.webp" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.349.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-high-og.html"class="product__name">Nike Air Jordan High OG</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-retro-OG.html" class="product__preview-link">
+                                                <img src="./assets/images/retroOG.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">998.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-retro-OG.html"class="product__name">Nike Jordan 1 Retro OG</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-nike-all-white.html" class="product__preview-link">
+                                                <img src="./assets/images/af1-allw.png" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.068.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-nike-all-white.html"class="product__name">Nike Air Force 1 All White</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-para-noise.html" class="product__preview-link">
+                                                <img src="./assets/images/par-noise.png" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.380.000đ</span>
+                                                <span class="product__price-sale">1.467.000đ</span>
+                                            </div>
+                                            <a href="/login-san-pham-para-noise.html"class="product__name">Nike Air Force 1 Para-Noise</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-legacy.html" class="product__preview-link">
+                                                <img src="./assets/images/legacy.webp" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.269.000đ</span>
+                                                <span class="product__price-sale">1.300.000đ</span>
+                                            </div>
+                                            <a href="/login-san-pham-legacy.html"class="product__name">Nike Air Jordan Legacy</a>
+                                        </div>
+                                    </div>
+                                </div>                             
+                            </div>
+                        </div>
+                        <div class="product-list" id="menu3">
+                            <div class="row ">
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-unc.html" class="product__preview-link">
+                                                <img src="./assets/images/UNC.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.179.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-unc.htmll"class="product__name">Nike Air Jordan 1 UNC</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-nike-all-white.html" class="product__preview-link">
+                                                <img src="./assets/images/af1-allw.png" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.068.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-nike-all-white.html"class="product__name">Nike Air Force 1 All White</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-legacy.html" class="product__preview-link">
+                                                <img src="./assets/images/legacy.webp" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.269.000đ</span>
+                                                <span class="product__price-sale">1.300.000đ</span>
+                                            </div>
+                                            <a href="/login-san-pham-legacy.html"class="product__name">Nike Air Jordan Legacy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-low-shadow.html" class="product__preview-link">
+                                                <img src="./assets/images/lowShadow.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.299.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-low-shadow.html"class="product__name">Nike Air Jordan 1 Low Shadow</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-high-og.html" class="product__preview-link">
+                                                <img src="./assets/images/ogfemale.webp" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.349.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-high-og.html"class="product__name">Nike Air Jordan 1 High OG</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-retro-dior.html" class="product__preview-link">
+                                                <img src="./assets/images/retrodior.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.467.000đ</span>
+                                                <span class="product__price-sale">1.600.000đ</span>
+                                            </div>
+                                            <a href="/login-san-pham-retro-dior.html"class="product__name">Nike Air Jordan 1 Retro Dior</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-high-black.html" class="product__preview-link">
+                                                <img src="./assets/images/jordanhighblackwhite.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.579.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-high-black.html"class="product__name">Nike Air Jordan 1 High Black</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-para-noise.html" class="product__preview-link">
+                                                <img src="./assets/images/par-noise.png" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">1.380.000đ</span>
+                                                <span class="product__price-sale">1.467.000đ</span>
+                                            </div>
+                                            <a href="/login-san-pham-para-noise.html"class="product__name">Nike Air Force 1 Para-Noise</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mg-bt">
+                                    <div class="product">
+                                        <div class="product__preview">
+                                            <a href="/login-san-pham-jordan-retro-OG.html" class="product__preview-link">
+                                                <img src="./assets/images/retroOG.jpg" alt="" class="product__preview-img">
+                                            </a>
+                                            <div class="product__preview-buybox">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="product__infor">
+                                            <div class="product__price">
+                                                <span class="product__price-main">998.000đ</span>
+                                                <span class="product__price-sale"></span>
+                                            </div>
+                                            <a href="/login-san-pham-jordan-retro-OG.html"class="product__name">Nike Jordan 1 Retro OG</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="pagination">
+                            <button class="pagination-btn active" data-target="#menu1">1</button>
+                            <button class="pagination-btn" data-target="#menu2">2</button>
+                            <button class="pagination-btn" data-target="#menu3">3</button>
+                        </section>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="mid-footer">
+                <div class="grid wide">
+                    <div class="col-sm-12">
+                        <h1 class="mid-footer__name">Cửa hàng Giày Shoes Shop</h1>
+                        <div class="mid-footer__address">
+                            <span>Shoes Shop:</span>
+                            <span>Khu 2 - Đại học Cần Thơ</span>
+                        </div>
+                        <div class="mid-footer__contact">
+                            <span>Hotline: <a href="#">69966996</a></span>
+                            <span>Email: <a href="#">shoesshop@gmail.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>&copy Copyright by <a href="/login-index.html">ShoesShop</a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="/javascript/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/scroll-top.js"></script>
+    <script>
+        const pagination = document.querySelector(".pagination");
+        console.log(pagination);
+        pagination.addEventListener('click',function(e){
+            if(e.target.classList.contains('pagination-btn')){
+            const target = e.target.getAttribute("data-target")
+            pagination.querySelector(".active").classList.remove('active');
+            e.target.classList.add('active');
+
+            const menu = document.querySelector('.body')
+            menu.querySelector(".product-list.active").classList.remove('active');
+            menu.querySelector(target).classList.add('active');
+            }
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ</title>
+    <link
+      href="./assets/images/logo(2).jpg"
+      rel="shortcut icon"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <script src="/javascript/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+
+    <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Praise&family=Roboto+Slab:wght@300;400;500;600&family=Roboto:ital,wght@1,100&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Praise&family=Roboto:ital,wght@1,100&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script defer src="./javascript/bootstrap.min.js"></script>
+  </head>
+  <body style="min-height: 100vh">
+    <header class="header d-flex align-items-center justify-content-center">
+      <div class="grid wide">
+        <div class="row no-gutters">
+          <div class="col l-4">
+            <div class="header__logo">
+              <a href="./login-index.html" class="header__logo-link">
+                <img
+                  src="./assets/images/logo(2).jpg"
+                  alt=""
+                  class="header__logo-img"
+                />
+              </a>
+              <span class="header__logo-text">ShoesShop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-sm">
+      <div class="grid wide">
+        <div class="row no-gutters">
+          <div class="col l-10">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/login-index.html" class="nav__item-link">trang chủ</a>
+              </li>
+              <li class="nav__item">
+                <a href="/login-dashboard.html" class="nav__item-link">dashboard</a>
+              </li>
+              <li class="nav__item">
+                <a href="/login-sanpham.html" class="nav__item-link">sản phẩm</a>
+              </li>
+              <li class="nav__item">
+                <a href="/profile.html" class="nav__item-link">tài khoản</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__item-link active">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col l-2">
+            <div class="nav-icon">
+              <div class="nav__search">
+                <i class="fas fa-search nav__search-icon"></i>
+                <form action="/login-sanpham.html" class="nav__search-form">
+                  <input
+                    class="nav__search-input"
+                    type="text"
+                    placeholder="Gõ tìm kiếm..."
+                    required
+                  />
+                  <button type="submit" class="nav__search-submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="nav__cart">
+                <a href="/giohang.html" class="nav__cart-link">
+                  <i class="fas fa-shopping-basket nav__cart-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="bg-light">
+      <div
+        class="wrapper-content container flex-column d-flex bg-light align-items-center gap-4"
+      >
+        <h1 class="text-center">Liên hệ với chúng tôi</h1>
+        <div class="img">
+          <img src="./assets/images/contact-img.gif" alt="" />
+        </div>
+        <form action="" id="form" class="form form-content">
+          <div class="mb-3 form-group">
+            <label
+              for="exampleFormControlInput0"
+              class="form-label label-custom"
+              >Tên của bạn
+            </label>
+            <input
+              type="text"
+              class="form-control form-custom"
+              id="exampleFormControlInput0"
+              placeholder="Nhập tên của bạn"
+            />
+            <span class="form-message"></span>
+          </div>
+          <div class="mb-3 form-group">
+            <label
+              for="exampleFormControlInput1"
+              class="form-label label-custom"
+              >Email
+            </label>
+            <input
+              type="email"
+              class="form-control form-custom"
+              id="exampleFormControlInput1"
+              placeholder="email@gmail.com"
+            />
+            <span class="form-message"></span>
+          </div>
+          <div class="mb-3 form-group">
+            <label
+              for="exampleFormControlTextarea1"
+              class="form-label label-custom"
+              >Nội dung</label
+            >
+            <textarea
+              class="form-control form-custom"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Nhập nội dung....."
+            ></textarea>
+            <span class="form-message"></span>
+          </div>
+          <div class="mb-3">
+            <button id="submit" class="btn-submit-form-contact btn btn-primary">Gửi</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="mid-footer">
+        <div class="grid wide">
+          <div class="col-sm-12">
+            <h1 class="mid-footer__name">Cửa hàng Giày Shoes Shop</h1>
+            <div class="mid-footer__address">
+              <span>Shoes Shop:</span>
+              <span>Khu 2 - Đại học Cần Thơ</span>
+            </div>
+            <div class="mid-footer__contact">
+              <span>Hotline: <a href="#">69966996</a></span>
+              <span>Email: <a href="#">shoesshop@gmail.com</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <p>&copy Copyright by <a href="/login-index.html">ShoesShop</a></p>
+      </div>
+    </footer>
+
+    <script src="./javascript/validator.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded',function(){
+        Validator({
+            form: '#form',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isRequired('#exampleFormControlInput0', 'Vui lòng nhập tên đầy đủ của bạn'),
+              Validator.isEmail('#exampleFormControlInput1'),
+              Validator.isRequired('#exampleFormControlTextarea1','Vui lòng nhập nội dung liên hệ')
+            ],
+            onSubmit: function (data) {
+                console.log(data);
+            }
+          })
+      })
+    </script>
+  </body>
+</html>

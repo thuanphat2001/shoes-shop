@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='./assets/images/logo(2).jpg' rel='shortcut icon' type='image/png'/>
+    <title>DashBoard</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/dashboard.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body class="fixed-nav sticky-footer" id="page-top">
+    <!-- Navigation-->
+    <nav
+      style="background-color: white"
+      class="navbar navbar-expand-lg text-danger fixed-top"
+      id="mainNav"
+    >
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="./assets/images/logo(2).jpg" alt="" />
+      </a>
+      <button
+        class="navbar-toggler bg-secondary navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon text-white pt-1"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul
+          class="navbar-nav navbar-sidenav navbar-list text-secondary"
+          id="exampleAccordion"
+        >
+          <li
+            class="nav-item"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Dashboard"
+          >
+            <a class="nav-link" href="dashboard.html">
+              <i class="fa fa-fw fa-dashboard"></i>
+              <span class="nav-link-text text-secondary">Dashboard</span>
+            </a>
+          </li>
+          <li
+            class="nav-item"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Components"
+          >
+            <a
+              class="nav-link nav-link-collapse collapsed"
+              data-toggle="collapse"
+              href="#collapseComponents1"
+              data-parent="#exampleAccordion"
+            >
+              <i class="fa-solid fa-shop"></i>
+              <span class="nav-link-text">Sản Phẩm</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseComponents1">
+              <li>
+                <a href="#">Thêm Sản Phẩm</a>
+              </li>
+              <li>
+                <a href="#">Cập Nhật Sản Phẩm</a>
+              </li>
+              <li>
+                <a href="#">Xóa Sản Phẩm</a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="nav-item"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Components"
+          >
+            <a
+              class="nav-link nav-link-collapse collapsed"
+              data-toggle="collapse"
+              href="#collapseComponents2"
+              data-parent="#exampleAccordion"
+            >
+              <i class="fa-solid fa-info"></i>
+              <span class="nav-link-text">Giới Thiệu</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseComponents2">
+              <li>
+                <a href="#">Thêm Giới Thiệu</a>
+              </li>
+              <li>
+                <a href="#">Cập Nhật Giới Thiệu</a>
+              </li>
+              <li>
+                <a href="#">Xóa Giới Thiệu</a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="nav-item"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Components"
+          >
+            <a
+              class="nav-link nav-link-collapse collapsed"
+              data-toggle="collapse"
+              href="#collapseComponents3"
+              data-parent="#exampleAccordion"
+            >
+              <i class="fa-solid fa-user"></i>
+              <span class="nav-link-text">Tài khoản</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseComponents3">
+              <li>
+                <a href="#">Nhân viên</a>
+              </li>
+              <li>
+                <a href="#">Khách hàng</a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="nav-item"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Link"
+          >
+            <a class="nav-link" href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span class="nav-link-text">Cài Đặt</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+          <li class="nav-item">
+            <a class="nav-link text-center" id="sidenavToggler">
+              <i class="fa fa-fw fa-angle-left"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle mr-lg-2"
+              id="messagesDropdown"
+              href="#"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fa fa-fw fa-envelope"></i>
+              <span class="d-lg-none"
+                >Tin nhắn
+                <span class="badge badge-pill badge-danger">12 Mới</span>
+              </span>
+              <span class="indicator text-primary d-none d-lg-block">
+                <i class="fa fa-fw fa-circle"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+              <h6 class="dropdown-header">Tin nhắn mới:</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>Dương Thành Thông</strong>
+                <span class="small float-right text-muted">11:20 AM</span>
+                <div class="dropdown-message small">
+                  Chào admin! Bạn có thể giới thiệu mình những sản phẩm mới nhất
+                  trong năm 2022 không ạ. Mình muốn mua 1 đôi giày để đi chơi
+                  với bạn gái
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>Vy Đình Quảng</strong>
+                <span class="small float-right text-muted">1:15 AM</span>
+                <div class="dropdown-message small">
+                  Chào Shop! Shop có thể giới thiệu em những mẫu nike tầm giá từ
+                  2000000 đến 5000000 được k ạ
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>Nguyễn Thuận Phát</strong>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">
+                  Chào Shop! Cho em hỏi đôi Nike Air Zoom Pegasus 39 khi nào sẽ
+                  bán tại shop mình ạ
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item small" href="#">Xem Tất Cả Tin Nhắn</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle mr-lg-2"
+              id="alertsDropdown"
+              href="#"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fa fa-fw fa-bell"></i>
+              <span class="d-lg-none"
+                >Thông Báo
+                <span class="badge badge-pill badge-warning">6 New</span>
+              </span>
+              <span class="indicator text-warning d-none d-lg-block">
+                <i class="fa fa-fw fa-circle"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+              <h6 class="dropdown-header">Thông Báo Mới:</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-success">
+                  <strong>
+                    <i class="fa fa-long-arrow-up fa-fw"></i>Quảng đã mua Nike
+                    ZoomX Streakfly</strong
+                  >
+                </span>
+                <span class="small float-right text-muted">00:00 AM</span>
+                <div class="dropdown-message small">
+                  Tình trạng: Đặt hàng thành công
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-danger">
+                  <strong>
+                    <i class="fa fa-long-arrow-down fa-fw"></i>Thông đã hủy 1
+                    đơn hàng</strong
+                  >
+                </span>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">
+                  Tình Trạng: Hủy đơn hàng thành công
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-success">
+                  <strong>
+                    <i class="fa fa-long-arrow-up fa-fw"></i>Thuận Phát Đã mua
+                    Nike Air Max 97 Prototype</strong
+                  >
+                </span>
+                <span class="small float-right text-muted">1:21 AM</span>
+                <div class="dropdown-message small">
+                  Tình trạng: Đặt hàng thành công
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item small" href="#">Xem Tất Cả Thông Báo</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <form class="form-inline my-2 my-lg-0 mr-lg-2">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Tìm kiếm..."
+                />
+                <span style="margin-left: 0" class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i style="width: auto" class="fa fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+              <i style="width: 30px" class="fa fa-fw fa-sign-out"></i>Đăng
+              xuất</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb" style="background-color:white">
+          <li class="breadcrumb-item">
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="breadcrumb-item active">My Dashboard</li>
+        </ol>
+        <!-- Icon Cards-->
+        <div class="row">
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div
+              class="card text-white o-hidden h-100"
+              style="
+                background-color: #fc5296;
+                background-image: linear-gradient(
+                  315deg,
+                  #fc5296 0%,
+                  #f67062 74%
+                );
+              "
+            >
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fa fa-fw fa-comments"></i>
+                </div>
+                <div class="mr-5">26 Tin Nhắn mới!</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="#">
+                <span class="float-left">Xem chi tiết</span>
+                <span class="float-right">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div
+              class="card text-white o-hidden h-100"
+              style="
+                background-color: #fce043;
+                background-image: linear-gradient(
+                  315deg,
+                  #fce043 0%,
+                  #fb7ba2 74%
+                );
+              "
+            >
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fa fa-fw fa-list"></i>
+                </div>
+                <div class="mr-5">11 Công việc cần làm!</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="#">
+                <span class="float-left">Xem chi tiết</span>
+                <span class="float-right">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div
+              class="card text-white o-hidden h-100"
+              style="
+                background-color: #7ee8fa;
+                background-image: linear-gradient(
+                  315deg,
+                  #7ee8fa 0%,
+                  #80ff72 74%
+                );
+              "
+            >
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fa fa-fw fa-shopping-cart"></i>
+                </div>
+                <div class="mr-5">123 Đơn đặt hàng đang chờ bạn duyệt!</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="#">
+                <span class="float-left">Xem chi tiết</span>
+                <span class="float-right">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div
+              class="card text-white o-hidden h-100"
+              style="
+                background-color: #f7b42c;
+                background-image: linear-gradient(
+                  315deg,
+                  #f7b42c 0%,
+                  #fc575e 74%
+                );
+              "
+            >
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fa fa-fw fa-support"></i>
+                </div>
+                <div class="mr-5">13 mẫu giày mới sắp ra mắt!</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="#">
+                <span class="float-left">Xem chi tiết</span>
+                <span class="float-right">
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Area Chart Example-->
+        <div class="row">
+          <div class="col-lg-8">
+            <!-- Example Bar Chart Card-->
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fa fa-bar-chart"></i> Sản phẩm được mua nhiều nhất
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-8 my-auto">
+                    <img
+                      class="rounded"
+                      src="./assets/images/bestProduct.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover"
+                      alt=""
+                    />
+                    <canvas id="myBarChart" width="100" height="50"></canvas>
+                  </div>
+                  <div class="col-sm-4 text-center my-auto">
+                    <div class="">
+                      <div
+                        class=""
+                        style="font-size: 1.5rem; margin-bottom: 12px"
+                      >
+                        🎉🎉🎉
+                      </div>
+                      <div class="h4 mb-0 text-primary">2000 lượt mua 🎁</div>
+
+                      <hr />
+                      <div class="h4 mb-0 text-danger">1500 yêu thích ❤️</div>
+                      <hr />
+                      <div class="h4 mb-0 text-warning">500 đánh giá ⭐</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer small text-muted">
+                Cập nhật hôm qua 11:59 PM
+              </div>
+            </div>
+            <!-- Card Columns Example Social Feed-->
+            <div class="mb-0 mt-4">
+              <i class="fa fa-newspaper-o"></i> Các sản phẩm khác
+            </div>
+            <hr class="mt-2" />
+            <div class="card-columns">
+              <!-- Example Social Card-->
+              <div class="card mb-3">
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid w-100"
+                    src="./assets/images/af1-allw.png"
+                    alt=""
+                  />
+                </a>
+                <div class="card-body">
+                  <a class="mr-3 d-inline-block text-danger" href="#">
+                    <i class="fa fa-fw fa-thumbs-up"></i>Yêu thích
+                    <span class="">(500)</span>
+                  </a>
+                  <a class="mr-3 d-inline-block text-warning" href="#">
+                    <i class="fa fa-fw fa-comment"></i>Comment
+
+                    <span class="">(300)</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Example Social Card-->
+              <div class="card mb-3">
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid w-100"
+                    src="./assets/images/firered.webp"
+                    alt=""
+                  />
+                </a>
+
+                <div class="card-body">
+                  <a class="mr-3 d-inline-block text-danger" href="#">
+                    <i class="fa fa-fw fa-thumbs-up"></i>Yêu thích
+                    <span class="">(500)</span>
+                  </a>
+                  <a class="mr-3 d-inline-block text-warning" href="#">
+                    <i class="fa fa-fw fa-comment"></i>Comment
+
+                    <span class="">(300)</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Example Social Card-->
+              <div class="card mb-3">
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid w-100"
+                    src="./assets/images/legacy.webp"
+                    alt=""
+                  />
+                </a>
+                <div class="card-body">
+                  <a class="mr-3 d-inline-block text-danger" href="#">
+                    <i class="fa fa-fw fa-thumbs-up"></i>Yêu thích
+                    <span class="">(500)</span>
+                  </a>
+                  <a class="mr-3 d-inline-block text-warning" href="#">
+                    <i class="fa fa-fw fa-comment"></i>Comment
+
+                    <span class="">(300)</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Example Social Card-->
+              <div class="card mb-3">
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid w-100"
+                    src="./assets/images/nikexGD.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="card-body">
+                  <a class="mr-3 d-inline-block text-danger" href="#">
+                    <i class="fa fa-fw fa-thumbs-up"></i>Yêu thích
+                    <span class="">(500)</span>
+                  </a>
+                  <a class="mr-3 d-inline-block text-warning" href="#">
+                    <i class="fa fa-fw fa-comment"></i>Comment
+
+                    <span class="">(300)</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /Card Columns-->
+          </div>
+          <div class="col-lg-4">
+            <!-- Example Pie Chart Card-->
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fa-solid fa-circle-info"></i> Thông tin sản phẩm
+              </div>
+              <div
+                class="card-body d-flex justify-content-center align-items-center flex-column"
+              >
+                <img
+                  src="./assets/images/product-gif.gif"
+                  style="width: 30%; height: 30%"
+                  alt=""
+                />
+                <div
+                  class="pl-4 d-flex justify-content-center align-items-center flex-column"
+                >
+                  <h5 class="card-title text-center">
+                    Off-White x Nike Air Max 90
+                  </h5>
+                  <p class="card-text text-center">
+                    Đây là sản phẩm được thiết kế với ý tưởng độc đáo. Áp dụng
+                    công nghệ mới nhất để tạo ra 1 sản phẩm tuyệt với
+                  </p>
+                  <button href="#" class="btn btn-danger">HOT 🔥🔥</button>
+                </div>
+              </div>
+              <div class="card-footer small text-muted">
+                Cập nhật hôm qua 11:59 PM
+              </div>
+            </div>
+            <!-- Example Notifications Card-->
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fa fa-bell-o"></i> Bình luận
+              </div>
+              <div class="list-group list-group-flush small">
+                <a class="list-group-item list-group-item-action" href="#">
+                  <div class="media">
+                    <div class="media-body">
+                      <strong>Nguyễn Thuận Phát</strong>
+                      <span class="small float-right text-muted">11:21 AM</span>
+                      <div class="dropdown-message small">
+                        Sản phẩm rất đẹp! Chất lượng cao
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a class="list-group-item list-group-item-action" href="#">
+                  <div class="media">
+                    <div class="media-body">
+                      <strong>Dương Thành Thông</strong>
+                      <span class="small float-right text-muted">11:21 AM</span>
+                      <div class="dropdown-message small">
+                        Sản phẩm rất đẹp! Chất lượng cao
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a class="list-group-item list-group-item-action" href="#">
+                  <div class="media">
+                    <div class="media-body">
+                      <strong>Vy Đình Quảng</strong>
+                      <span class="small float-right text-muted">11:21 AM</span>
+                      <div class="dropdown-message small">
+                        Sản phẩm tốt! Sẽ ủng hộ thêm
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a class="list-group-item list-group-item-action" href="#">
+                  <div class="media">
+                    <div class="media-body">
+                      <strong>Nguyễn Trọng Mãi</strong>
+                      <span class="small float-right text-muted">11:21 AM</span>
+                      <div class="dropdown-message small">
+                        Sản phẩm đẹp! Giá phù hợp với sinh viên. Great
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a class="list-group-item list-group-item-action" href="#"
+                  >Xem tất cả...</a
+                >
+              </div>
+              <div class="card-footer small text-muted">
+                Cập nhật hôm qua 11:59 PM
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Example DataTables Card-->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fa fa-table"></i> Danh Sản phẩm Hiện Có
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table
+                class="table table-bordered"
+                id="dataTable"
+                width="100%"
+                cellspacing="0"
+              >
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Tên</th>
+                    <th>Hình ảnh</th>
+                    <th>Số lượng</th>
+                    <th>Ngày nhập hàng</th>
+                    <th>Giá</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>001</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/airlow.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>002</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/af1-allw.png"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>003</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/bestProduct.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>004</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/legacy.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>005</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/firered.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>006</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/jordanhighblackwhite.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>007</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/topjordan.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>008</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/nikeGD.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>009</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/UNC.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>010</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/sneakersale.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>011</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/airlow.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>012</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/af1-allw.png"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>011</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/bestProduct.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>013</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/legacy.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>014</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/firered.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>015</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/jordanhighblackwhite.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>016</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/topjordan.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>017</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/nikeGD.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>018</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/UNC.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>019</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/sneakersale.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>020</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/airlow.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>021</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/af1-allw.png"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>022</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/bestProduct.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>023</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/legacy.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>024</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/firered.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>025</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/jordanhighblackwhite.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>026</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/topjordan.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>027</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/nikeGD.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>028</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/UNC.jpg"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                  <tr>
+                    <td>029</td>
+                    <td>Nike Air 98</td>
+                    <td>
+                      <img
+                        style="width: 50px; height: 50px"
+                        src="./assets/images/sneakersale.webp"
+                        alt=""
+                      />
+                    </td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>2.000.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">
+            Cập nhật hôm qua 11:59 PM
+          </div>
+        </div>
+      </div>
+
+      <!-- Logout Modal-->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Đăng Xuất
+              </h5>
+              <button
+                class="close"
+                type="button"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Bạn muốn đăng xuất khỏi Dashboard ?
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-dismiss="modal"
+              >
+                No
+              </button>
+              <a class="btn btn-primary" href="/login-index.html">Yes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+</html>

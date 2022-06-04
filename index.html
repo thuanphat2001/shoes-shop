@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='./assets/images/logo(2).jpg' rel='shortcut icon' type='image/png'/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    /> 
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <script src="/javascript/bootstrap.min.js"></script>
+    <script src="/javascript/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+
+    
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Praise&family=Roboto+Slab:wght@300;400;500;600&family=Roboto:ital,wght@1,100&family=Satisfy&display=swap" rel="stylesheet">   
+     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Praise&family=Roboto:ital,wght@1,100&family=Satisfy&display=swap" rel="stylesheet">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>ShoesShop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <button class="scroll " ><i class="fas fa-arrow-up"></i></button>
+        <header class="header">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <div class="col l-4">
+                        <div class="header__logo">
+                            <a href="./index.html" class="header__logo-link">
+                                <img src="./assets/images/logo(2).jpg" alt="" class="header__logo-img">
+                            </a>
+                            <span class="header__logo-text">ShoesShop</span>
+                        </div>
+                    </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <div class="col l-10">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__item-link active">trang chủ</a></li>
+                            <li class="nav__item"><a href="/dashboard.html" class="nav__item-link">dashboard</a></li>
+                            <li class="nav__item"><a href="/san-pham.html" class="nav__item-link">sản phẩm</a></li>
+                            <li class="nav__item"><a href="/login.html" class="nav__item-link">tài khoản</a></li>
+                            <li class="nav__item"><a href="/contact.html" class="nav__item-link">liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-2">
+                        <div class="nav-icon">
+                            <div class="nav__search">
+                                <i class="fas fa-search nav__search-icon"></i>
+                                <form action="/san-pham.html" class="nav__search-form">
+                                    <input class="nav__search-input" type="text" placeholder="Gõ tìm kiếm..." required>
+                                    <button type="submit" class="nav__search-submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="swiper-container">
+            <div class="grid">
+                <div class="row no-gutters">
+                    <div class="col-sm-12">
+                        <div class="swiper mySwiper1">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="./assets/images/swiper(1).jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/slider2(2).jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/slider(3).jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images//slider(4).webp" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/slider(5).webp" alt="">
+                              </div>
+                            </div>
+                            <div class="swiper-button-next1"></div>
+                            <div class="swiper-button-prev1"></div>
+                            <div class="swiper-pagination"></div>
+                    
+                            <div class="slider__text">
+                                <span class="slider__heading">ShoesShop</span>
+                                <span class="slider__description">Hệ thống bán giày hàng đầu Việt Nam với hơn 69 cửa hàng trên toàn quốc mang những đôi giày tốt nhất đến với bạn!</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <section class="body">
+                <div class="grid wide">
+                    <div class="row ">
+                        <div class="col-sm-3">
+                            <div class="category">
+                                <div class="category__colection">
+                                    <h2 class="colection__title">
+                                        <span class="colection__title-head">danh mục sản phẩm</span>
+                                    </h2>
+                                    <div class="colection__content">
+                                        <ul class="colection__content-list">
+                                            <li class="colection__content-item">
+                                                <a href="#" class="colection__content-link">Sản phẩm mới</a>
+                                            </li>
+                                            <li class="colection__content-item">
+                                                <a href="#" class="colection__content-link">Sản phẩm nổi bật</a>
+                                            </li>
+                                            <li class="colection__content-item">
+                                                <a href="#" class="colection__content-link">Nike Air Force 1</a>
+                                            </li>
+                                            <li class="colection__content-item">
+                                                <a href="#" class="colection__content-link">Nike Air Jordan 1</a>
+                                            </li>
+                                            <li class="colection__content-item">
+                                                <a href="#" class="colection__content-link">Nike Nam</a>
+                                            </li>
+                                            <li class="colection__content-item">
+                                                <a href="#" class="colection__content-link">Nike Nữ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category__selling">
+                                    <div class="colection__title">
+                                        <h2 class="colection__title-head">sản phẩm bán chạy</h2>
+                                    </div>
+                                    <div class="selling__product">
+                                        <div class="selling__product-box">
+                                            <div class="selling__product-image">
+                                                <a href="/san-pham-nike-all-white.html" class="selling__product-link">
+                                                    <img src="./assets/images/af1-allw.png" alt="" class="selling__product-img">
+                                                </a>
+                                            </div>
+                                            <div class="selling__product-content">
+                                                <a href="/san-pham-nike-all-white.html"class="selling__product-title">Nike Air Force 1 All White</a>
+                                                <div class="selling__product-price-box">
+                                                    <span class="selling__product-price">1.068.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="selling__product-box">
+                                            <div class="selling__product-image">
+                                                <a href="/san-pham-para-noise.html" class="selling__product-link">
+                                                    <img src="./assets/images/par-noise.png" alt="" class="selling__product-img">
+                                                </a>
+                                            </div>
+                                            <div class="selling__product-content">
+                                                <a href="/san-pham-para-noise.html"class="selling__product-title">Nike Air Force 1 Para-Noise</a>
+                                                <div class="selling__product-price-box">
+                                                    <span class="selling__product-price">1.380.000đ</span>
+                                                    <span class="selling__product-price-sale">1.467.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="selling__product-box">
+                                            <div class="selling__product-image">
+                                                <a href="/san-pham-unc.html" class="selling__product-link">
+                                                    <img src="./assets/images/UNC.jpg" alt="" class="selling__product-img">
+                                                </a>
+                                            </div>
+                                            <div class="selling__product-content">
+                                                <a href="/san-pham-unc.html"class="selling__product-title">Nike Air Jordan 1 UNC</a>
+                                                <div class="selling__product-price-box">
+                                                    <span class="selling__product-price">1.179.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="selling__product-box">
+                                            <div class="selling__product-image">
+                                                <a href="/san-pham-jordan-high-black.html" class="selling__product-link">
+                                                    <img src="./assets/images/jordanhighblackwhite.jpg" alt="" class="selling__product-img">
+                                                </a>
+                                            </div>
+                                            <div class="selling__product-content">
+                                                <a href="/san-pham-jordan-high-black.html"class="selling__product-title">Nike Jordan 1 High Black</a>
+                                                <div class="selling__product-price-box">
+                                                    <span class="selling__product-price">1.579.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row ">
+                                <div class="col-sm-12">
+                                    <div class="main-product">
+    
+                                        <div class="colection__title no-bottom">
+                                            <h2 class="colection__title-head product--left" >sản phẩm nổi bật</h2>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-nike-all-white.html" class="product__preview-link">
+                                                                <img src="./assets/images/af1-allw.png" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.068.000đ</span>
+                                                                <span class="product__price-sale"></span>
+                                                            </div>
+                                                            <a href="/san-pham-nike-all-white.html"class="product__name">Nike Air Force 1 All White</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-para-noise.html" class="product__preview-link">
+                                                                <img src="./assets/images/par-noise.png" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.380.000đ</span>
+                                                                <span class="product__price-sale">1.467.000đ</span>
+                                                            </div>
+                                                            <a href="/san-pham-para-noise.html"class="product__name">Nike Air Force 1 Para-Noise</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-jordan-high-black.html" class="product__preview-link">
+                                                                <img src="./assets/images/jordanhighblackwhite.jpg" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.579.000đ</span>
+                                                                <span class="product__price-sale"></span>
+                                                            </div>
+                                                            <a href="/san-pham-jordan-high-black.html"class="product__name">Nike Jordan 1 High Black</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-retro-dior.html" class="product__preview-link">
+                                                                <img src="./assets/images/retrodior.jpg" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.467.000đ</span>
+                                                                <span class="product__price-sale">1.600.000đ</span>
+                                                            </div>
+                                                            <a href="/san-pham-retro-dior.html"class="product__name">Nike Air Jordan 1 Retro Dior</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-jordan-low-shadow.html" class="product__preview-link">
+                                                                <img src="./assets/images/lowShadow.jpg" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.299.000đ</span>
+                                                            </div>
+                                                            <a href="/san-pham-jordan-low-shadow.html"class="product__name">Nike Air Jordan 1 Low Shadow</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-unc.html" class="product__preview-link">
+                                                                <img src="./assets/images/UNC.jpg" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.179.000đ</span>
+                                                            </div>
+                                                            <a href="/san-pham-unc.html"class="product__name">Nike Air Jordan 1 UNC</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-jordan-mid.html" class="product__preview-link">
+                                                                <img src="./assets/images/mid.jpg" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">876.000đ</span>
+                                                                <span class="product__price-sale">1.120.000đ</span>
+                                                            </div>
+                                                            <a href="/san-pham-jordan-mid.html"class="product__name">Nike Air Jordan 1 Mid</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-jordan-high-og.html" class="product__preview-link">
+                                                                <img src="./assets/images/ogfemale.webp" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.349.000đ</span>
+                                                            </div>
+                                                            <a href="/san-pham-jordan-high-og.html"class="product__name">Nike Air Jordan 1 High OG</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-jordan-retro-OG.html" class="product__preview-link">
+                                                                <img src="./assets/images/retroOG.jpg" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">998.000đ</span>
+                                                            </div>
+                                                            <a href="/san-pham-jordan-retro-OG.html"class="product__name">Nike Jordan 1 Retro OG</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-legacy.html" class="product__preview-link">
+                                                                <img src="./assets/images/legacy.webp" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.269.000đ</span>
+                                                                <span class="product__price-sale">1.300.000đ</span>
+                                                            </div>
+                                                            <a href="/san-pham-legacy.html"class="product__name">Nike Air Jordan Legacy</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>                                                                                                   
+                                <div class="col-sm-12">
+                                    <div class="colection__title no-bottom">
+                                        <h2 class="colection__title-head product--left" >sản phẩm mới</h2>
+                                    </div>
+                                    <div class="new-product">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="swiper mySwiper2">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="product">
+                                                                <div class="product__preview">
+                                                                    <a href="/san-pham-jordan-high-og.html" class="product__preview-link">
+                                                                        <img src="./assets/images/ogfemale.webp" alt="" class="product__preview-img">
+                                                                    </a>
+                                                                    <div class="product__preview-buybox">
+                                            
+                                                                    </div>
+                                                                </div>
+                                                                <div class="product__infor">
+                                                                    <div class="product__price">
+                                                                        <span class="product__price-main">1.349.000đ</span>
+                                                                    </div>
+                                                                    <a href="/san-pham-jordan-high-og.html"class="product__name">Nike Air Jordan High OG</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="product">
+                                                                <div class="product__preview">
+                                                                    <a href="/san-pham-jordan-retro-OG.html" class="product__preview-link">
+                                                                        <img src="./assets/images/retroOG.jpg" alt="" class="product__preview-img">
+                                                                    </a>
+                                                                    <div class="product__preview-buybox">
+                                            
+                                                                    </div>
+                                                                </div>
+                                                                <div class="product__infor">
+                                                                    <div class="product__price">
+                                                                        <span class="product__price-main">998.000đ</span>
+                                                                    </div>
+                                                                    <a href="/san-pham-jordan-retro-OG.htmll"class="product__name">Nike Jordan 1 Retro OG</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="product">
+                                                                <div class="product__preview">
+                                                                    <a href="/san-pham-legacy.html" class="product__preview-link">
+                                                                        <img src="./assets/images/legacy.webp" alt="" class="product__preview-img">
+                                                                    </a>
+                                                                    <div class="product__preview-buybox">
+                                            
+                                                                    </div>
+                                                                </div>
+                                                                <div class="product__infor">
+                                                                    <div class="product__price">
+                                                                        <span class="product__price-main">1.269.000đ</span>
+                                                                        <span class="product__price-sale">1.300.000đ</span>
+                                                                    </div>
+                                                                    <a href="/san-pham-legacy.html"class="product__name">Nike Air Jordan Legacy</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-sm-6">
+                                    <div class="sale-banner" data-aos="fade-left">
+                                        <div class="sale-banner__item">
+                                            <img src="./assets/images/sneakersale.webp" alt="" class="sale-banner__img">
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="sale-banner" data-aos="fade-right">
+                                        <div class="sale-banner__item">
+                                            <img src="./assets/images/saleoff.jpg" alt="" class="sale-banner__img">
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="week-product">
+    
+                                        <div class="colection__title no-bottom">
+                                            <h2 class="colection__title-head product--left" >bán chạy trong tuần</h2>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper mySwiper3">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-jordan-high-black.html" class="product__preview-link">
+                                                                <img src="./assets/images/jordanhighblackwhite.jpg" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.579.000đ</span>
+                                                                <span class="product__price-sale"></span>
+                                                            </div>
+                                                            <a href="/san-pham-jordan-high-black.html"class="product__name">Nike Air Jordan 1 High Black</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-unc.html" class="product__preview-link">
+                                                                <img src="./assets/images/UNC.jpg" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.179.000đ</span>
+                                                            </div>
+                                                            <a href="/san-pham-unc.html"class="product__name">Nike Air Jordan 1 UNC</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-jordan-low-shadow.html" class="product__preview-link">
+                                                                <img src="./assets/images/lowShadow.jpg" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.299.000đ</span>
+                                                                <span class="product__price-sale"></span>
+                                                            </div>
+                                                            <a href="/san-pham-jordan-low-shadow.html"class="product__name">Nike Air Jordan 1 Low Shadow</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-retro-dior.html" class="product__preview-link">
+                                                                <img src="./assets/images/retrodior.jpg" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">998.000đ</span>
+                                                            </div>
+                                                            <a href="/san-pham-retro-dior.html"class="product__name">Nike Jordan 1 Retro Dior</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product">
+                                                        <div class="product__preview">
+                                                            <a href="/san-pham-nike-all-white.html" class="product__preview-link">
+                                                                <img src="./assets/images/af1-allw.png" alt="" class="product__preview-img">
+                                                            </a>
+                                                            <div class="product__preview-buybox">
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <div class="product__infor">
+                                                            <div class="product__price">
+                                                                <span class="product__price-main">1.068.000đ</span>
+                                                            </div>
+                                                            <a href="/san-pham-nike-all-white.html"class="product__name">Nike Air Force 1 All White</a>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="mid-footer">
+                <div class="grid wide">
+                    <div class="col-sm-12">
+                        <h1 class="mid-footer__name">Cửa hàng Giày Shoes Shop</h1>
+                        <div class="mid-footer__address">
+                            <span>Shoes Shop:</span>
+                            <span>Khu 2 - Đại học Cần Thơ</span>
+                        </div>
+                        <div class="mid-footer__contact">
+                            <span>Hotline: <a href="#">69966996</a></span>
+                            <span>Email: <a href="#">shoesshop@gmail.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>&copy Copyright by <a href="#">ShoesShop</a></p>
+            </div>
+        </footer>
+    </div>
+  
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
+      <script src="./javascript/main.js"> </script>
+      <script src="./javascript/swiper.js"></script>
+      <script src="./javascript/scroll-top.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+</html>

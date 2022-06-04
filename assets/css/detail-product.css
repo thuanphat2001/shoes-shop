@@ -1,0 +1,242 @@
+.container{
+    background-color: #fff;
+    padding-bottom:30px ;
+}
+
+.detail-img{
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #ebebeb;
+
+}
+.detail-small{
+    margin-top: 30px;
+}
+.detail-small-img{
+    width: 120px;
+    object-fit: cover;
+    border: 1px solid #ebebeb;
+    margin-right: 10px;
+}
+.detail-small-img:hover{
+    border: 1px solid var(--main-color);
+}
+
+.infor-title{
+    font-size: 2.4rem;
+    text-transform:uppercase;
+    margin-bottom: 20px;
+}
+.infor__price-box{
+    padding: 15px 0;
+    border-top: solid 1px #ebebeb;
+}
+.price-product{
+    color: var(--text-color);
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+}
+.price-sale{
+    color: #9f9f9f;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-decoration: line-through;
+    margin-left: 18px;
+}
+.price-summary{
+    font-size: 1.4rem;
+    border-top: solid 1px #ebebeb;
+    padding: 15px 0;
+}
+.price-summary__title{
+    text-transform: uppercase;
+    display: block;
+}
+.price-summary__des{
+    display: block;
+    font-style: italic;
+    margin-top: 8px;
+}
+.price-form{
+    border-top: solid 1px #ebebeb;
+    padding: 15px 0;
+
+}
+.price-number{
+    font-size: 1.6rem;
+}
+.price-number-input{
+    margin: 12px 0;
+    display: flex;
+
+}
+.price-number-btn{
+    font-size: 2.2rem;
+    width: 40px;
+    height: 40px;
+    border: solid 1px grey;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.price-number-btn:hover{
+    background-color:var(--text-color);
+    color: #fff;
+}
+.price-number-quality{
+    border: solid 1px grey;
+    width:80px;
+    height: 40px;
+    margin: 0 10px;
+    outline: none;
+    text-align: center;
+}
+.price-buy{
+    padding: 15px 0;
+    border-top: solid 1px #ebebeb;
+}
+.price-buy-btn{
+    padding: 15px 20px;
+    border: solid 1px #c69c6d;
+    background-color: var(--text-color);
+    color:#fff;
+    transition: .2s ease;
+    cursor: pointer;
+    outline: none;
+}
+.price-buy-btn:hover{
+    background-color: #fff;
+    color: var(--text-color);
+}
+.price-buy-text{
+    font-size: 1.4rem ;
+    text-transform: uppercase;
+}
+.menu-tap{
+    margin-top: 30px;
+}
+
+.tab-list{
+    display: flex;
+    border-bottom: solid 1px #ebebeb;
+    margin: 0;
+    text-transform: uppercase;
+}
+.tab-item{
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.tab-item.active{
+    color: var(--text-color);
+    font-weight: bold;
+    margin-bottom: -1px;
+    border: 1px solid #ddd;
+    border-top: solid 2px #c69c6d ;
+    border-bottom: solid 1px #fff;
+}
+.tab-content{
+    display: none;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border: solid 1px #ebebeb;
+    border-top: 0px;
+}
+.tab-content.active{
+    display: block;
+}
+.tab-text{
+    font-size:1.4rem;
+    line-height:1.6;
+    margin-bottom: 20px;
+}
+.tab-text.not-mg{
+    margin: 0;
+}
+.tab-text img{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Modal */
+.modal-container{
+    display:none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0,0,0,0.5);
+    z-index: 100;
+}
+.modal{    
+    width: 500px;
+    display:flex;    
+    flex-direction: column;    
+    position: absolute;
+    background-color:#fff;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding:20px;
+    border-radius:2px;
+    
+}
+.modal-close{
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 2.4rem ;
+    cursor: pointer;
+}
+.modal-close:hover{
+    color:var(--main-color)
+}
+.modal-title{
+    font-size:1.6rem;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+.modal-title i{
+    margin-right: 8px;
+}
+.modal-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.modal-name{
+    font-size:1.6rem;
+    text-transform: capitalize;
+}
+.modal-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    flex: 1;
+    margin-right: 10px;
+}
+.modal-infor{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+.modal-link{
+    width: 120px;
+    display: block;
+    margin-left: 52%;
+    transform: translateX(-50%);
+    font-size:1.6rem;
+    text-align: center;
+    padding: 14px 0;
+    background-color:black;
+    color: white;
+    border-radius: 5px;
+    transition: .2s ease;
+}
+.modal-link:hover{
+    background-color:var(--main-color)
+}

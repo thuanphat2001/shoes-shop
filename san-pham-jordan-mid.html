@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='./assets/images/logo(2).jpg' rel='shortcut icon' type='image/png'/>
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/detail-product.css">
+
+    
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Praise&family=Roboto+Slab:wght@300;400;500;600&family=Roboto:ital,wght@1,100&family=Satisfy&display=swap" rel="stylesheet">   
+     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Praise&family=Roboto:ital,wght@1,100&family=Satisfy&display=swap" rel="stylesheet">
+
+    <title>ShoesShop</title>
+</head>
+<body>
+    <div class="wrapper ">
+                <button class="scroll " ><i class="fas fa-arrow-up"></i></button>
+        <header class="header">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <div class="col l-4">
+                        <div class="header__logo">
+                            <a href="./index.html" class="header__logo-link">
+                                <img src="./assets/images/logo(2).jpg" alt="" class="header__logo-img">
+                            </a>
+                            <span class="header__logo-text">ShoesShop</span>
+                        </div>
+                    </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <div class="col l-10">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="/index.html" class="nav__item-link">trang chủ</a></li>
+                            <li class="nav__item"><a href="/dashboard.html" class="nav__item-link">dashboard</a></li>
+                            <li class="nav__item"><a href="/san-pham.html" class="nav__item-link">sản phẩm</a></li>
+                            <li class="nav__item"><a href="/login.html" class="nav__item-link">tài khoản</a></li>
+                            <li class="nav__item"><a href="/contact.html" class="nav__item-link">liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-2">
+                        <div class="nav-icon">
+                            <div class="nav__search">
+                                <i class="fas fa-search nav__search-icon"></i>
+                                <form action="/san-pham.html" class="nav__search-form">
+                                    <input class="nav__search-input" type="text" placeholder="Gõ tìm kiếm..." required>
+                                    <button type="submit" class="nav__search-submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="theme-background">
+            <div class="theme-title">Nike Air Jordan 1 Mid</div>
+        </div>
+        
+        <div class="container">
+            <section class="frag">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12">
+                            <ul class="frag__container">
+                                <li class="home">
+                                    <a href="/index.html" class="frag__link"> Trang chủ</a>
+                                    <span class="gach">/</span>
+                                </li>
+                                <li>
+                                    <span>Sản phẩm</span>
+                                    <span class="gach">/</span>
+                                </li>
+                                <li>
+                                    <span>Nike Air Jordan 1 Mid</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="grid wide">
+                <div id='8' class="chi-tiet-sp">                    
+                    <div class="row">
+                        <div class="col l-4">
+                            <div class="detail-product">
+                                <div class="detail-big">
+                                    <img src="./assets/images/mid.jpg" alt="" class="detail-img">
+                                </div>
+                                <div class="detail-small">
+                                    <img src="./assets/images/mid.jpg" alt="" class="detail-small-img">
+                                    <img src="./assets/images/mid.jpg" alt="" class="detail-small-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-8">
+                            <div class="infor">
+                                <h1 class="infor-title">Nike Air Jordan 1 Mid</h1>
+                                <div class="infor__price-box">
+                                    <span class="price-product">876000đ</span>
+                                    <span class="price-sale"></span>
+                                </div>
+                                <div class="price-summary">
+                                    <span class="price-summary__title">mô tả ngắn:</span>
+                                    <span class="price-summary__des">(Đang cập nhật)</span>
+                                </div>
+                                <form action="" class="price-form">
+                                    <div class="price-number">Số lượng:</div>
+                                    <div class="price-number-input">
+                                        <button type="button" class="price-number-btn btn1">-</button>
+                                        <input id="number-quality" type="text" maxlength="3" value="1" class="price-number-quality">
+                                        <button type="button" class="price-number-btn btn2">+</button>
+                                    </div>
+                                </form>
+                                <div class="price-buy">
+                                    <button type="submit" class="price-buy-btn order"
+                                        onclick="if(check()){
+                                                    duavaogiohang(idProduct,img,nameSpham,price,inputItem.value) || hideModal(img,nameSpham)}"                                        
+                                    >
+                                        <span class="price-buy-text">mua hàng</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="mid-footer">
+                <div class="grid wide">
+                    <div class="col l-12">
+                        <h1 class="mid-footer__name">Cửa hàng Giày Shoes Shop</h1>
+                        <div class="mid-footer__address">
+                            <span>Shoes Shop:</span>
+                            <span>Khu 2 - Đại học Cần Thơ</span>
+                        </div>
+                        <div class="mid-footer__contact">
+                            <span>Hotline: <a href="#">69966996</a></span>
+                            <span>Email: <a href="#">shoesshop@gmail.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>&copy Copyright by <a href="/index.html">ShoesShop</a></p>
+            </div>
+        </footer>
+        <div class="modal-container"></div>
+    </div>
+
+    <!-- JS -->
+    <script src="/javascript/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/scroll-top.js"></script>
+
+    <script src="./javascript/giohang.js"></script>
+    <script src="./javascript/main.js"></script>
+    
+</body>
+</html>

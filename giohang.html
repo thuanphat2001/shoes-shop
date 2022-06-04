@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='./assets/images/logo(2).jpg' rel='shortcut icon' type='image/png'/>
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <script src="/javascript/bootstrap.min.js"></script>
+    <script src="/javascript/jquery-3.6.0.min.js"></script>
+    
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Praise&family=Roboto+Slab:wght@300;400;500;600&family=Roboto:ital,wght@1,100&family=Satisfy&display=swap" rel="stylesheet">   
+     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Praise&family=Roboto:ital,wght@1,100&family=Satisfy&display=swap" rel="stylesheet">
+     
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+
+    <style>
+        .theme-background{
+            padding: 90px 0;
+            background: url('./assets/images/special.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+            position: relative;
+        }
+    </style>
+    <title>Giỏ hàng</title>
+</head>
+<body>
+    <div class="wrapper ">
+        <button class="scroll " ><i class="fas fa-arrow-up"></i></button>
+        <header class="header">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <div class="col l-4">
+                        <div class="header__logo">
+                            <a href="./login-index.html" class="header__logo-link">
+                                <img src="./assets/images/logo(2).jpg" alt="" class="header__logo-img">
+                            </a>
+                            <span class="header__logo-text">ShoesShop</span>
+                        </div>
+                    </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <div class="col l-10">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="login-index.html" class="nav__item-link">trang chủ</a></li>
+                            <li class="nav__item"><a href="/login-dashboard.html" class="nav__item-link">dashboard</a></li>
+                            <li class="nav__item"><a href="/login-sanpham.html" class="nav__item-link">sản phẩm</a></li>
+                            <li class="nav__item"><a href="/profile.html" class="nav__item-link">tài khoản</a></li>
+                            <li class="nav__item"><a href="/login-contact.html" class="nav__item-link">liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-2">
+                        <div class="nav-icon">
+                            <div class="nav__search">
+                                <i class="fas fa-search nav__search-icon"></i>
+                                <form action="/login-sanpham.html" class="nav__search-form">
+                                    <input class="nav__search-input" type="text" placeholder="Gõ tìm kiếm..." required>
+                                    <button type="submit" class="nav__search-submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="nav__cart">
+                                <a href="/giohang.html" class="nav__cart-link">
+                                    <i class="fas fa-shopping-basket nav__cart-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="theme-background">
+            <div class="theme-title">Giỏ hàng</div>
+        </div>
+
+        <section class="body">
+            <section class="frag">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12">
+                            <ul class="frag__container">
+                                <li class="home">
+                                    <a href="/login-index.html" class="frag__link"> Trang chủ</a>
+                                    <span class="gach">/</span>
+                                </li>
+                                <li>
+                                    <span>Giỏ hàng</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="header-cart">
+                            <div class="header-cart__title">
+                                <h1>Giỏ hàng của bạn</h1>
+                                <p class="con-lai"></p>
+                            </div>
+                        </div>
+                        <div class="cart-page">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="mid-footer">
+                <div class="grid wide">
+                    <div class="col-sm-12">
+                        <h1 class="mid-footer__name">Cửa hàng Giày Shoes Shop</h1>
+                        <div class="mid-footer__address">
+                            <span>Shoes Shop:</span>
+                            <span>Khu 2 - Đại học Cần Thơ</span>
+                        </div>
+                        <div class="mid-footer__contact">
+                            <span>Hotline: <a href="#">69966996</a></span>
+                            <span>Email: <a href="#">shoesshop@gmail.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>&copy Copyright by <a href="/login-index.html">ShoesShop</a></p>
+            </div>
+        </footer>
+
+        <div class="pay">
+            
+        </div></div>
+    </div>
+    
+    <script src="./javascript/giohang.js"></script>
+    <script src="./javascript/scroll-top.js"></script>
+
+    <script>
+        hienThiDsItem()
+
+        // chuyen 1 item sang html
+        function convertToHTML(itemGioHang){
+            var sanPham = laySanPham(itemGioHang.idProduct)
+            var html =  
+                        '    <div id="'+itemGioHang.idProduct+'" class="cart-tbody">\n'+
+                        '        <div class="cart-tbody__image"style="width: 17%;">\n'+
+                        '            <img src="'+sanPham.img+'" alt="" class="cart-tbody__img">\n'+
+                        '        </div>\n'+
+                        '        <div class="cart-tbody__name"style="width: 33%;">\n'+
+                        '            <span>'+sanPham.nameSpham+'</span>\n'+
+                        '        </div>\n'+
+                        '        <div class="cart-tbody__price"style="width: 15%;">\n'+
+                        '            '+sanPham.price+'\n'+
+                        '        </div>\n'+
+                        '        <div class="cart-tbody__form"style="width: 14%;">\n'+
+                        '            <input type="number" class="cart-tbody__input" onchange="changeInput(event)" value="'+sanPham.soluong+'">\n'+
+                        '        </div>\n'+
+                        '        <div class="cart-tbody__money"style="width: 15%;">\n'+
+                        '            \n'+
+                        '        </div>\n'+
+                        '        <div class="cart-tbody__delete"style="width: 6%;">\n'+
+                        '            <div class="cart-tbody__delete-icon" onclick= deleteItem('+itemGioHang.idProduct+')>\n'+
+                        '                <i class="fas fa-trash-alt"></i>\n'+
+                        '            </div>\n'+
+                        '        </div>\n'+
+                        '    </div>\n'+
+                        '\n'+
+                        '    \n'+
+                        '</div>\n'
+
+            return html
+        }
+         
+        // chuyen 1 list item sang html
+        function covertListToHTML(danhsachItemGioHang){
+            var htmlTong = ''
+            danhsachItemGioHang.forEach( itemGioHang =>{
+                htmlTong = htmlTong + convertToHTML(itemGioHang);
+            })
+            return htmlTong;
+        }
+        
+        function hienThiDsItem() {
+            const danhsachItemGioHang = layDanhSachGioHang()
+            let HTML = covertListToHTML(danhsachItemGioHang) 
+            const nodegCart = document.querySelector('.cart-page')
+            const cartInfor = nodegCart.innerHTML =`<div class="cart-infor">
+                            <div class="cart-thead">
+                                <div class="cart-thead__title"style="width: 17%;">Ảnh sản phẩm</div>
+                                <div class="cart-thead__title"style="width: 33%;">Tên sản phẩm</div>
+                                <div class="cart-thead__title"style="width: 15%;">Đơn giá</div>
+                                <div class="cart-thead__title"style="width: 14%;">Số lượng</div>
+                                <div class="cart-thead__title"style="width: 15%;">Thành tiền</div>
+                                <div class="cart-thead__title"style="width: 6%;">Xoá</div>
+                            </div>
+                            <div class="cart__body-container">  </div>
+                            <div class="cart-submit">
+                                <div class="total-money">
+                                    <div class="total-money-text">Tổng tiền:</div>
+                                    <div class="total-money-price"></div>
+                                </div>
+                                <button class="cart-submit-btn" onclick="thanhToan()">
+                                    Tiến hành thanh toán
+                                </button>
+                            </div> 
+                        </div>`
+            if (danhsachItemGioHang == '') { 
+                nodegCart.innerHTML = `<div class="cart-emty">Giỏ hàng rỗng, quay lại <a href="/san-pham.html">cửa hàng</a> để tiếp tục mua sắm <i class="far fa-grin-hearts"></i></div>` 
+            }  else{
+                const bodyContainer = document.querySelector('.cart__body-container')
+                bodyContainer.innerHTML =  HTML
+            }   
+            updateCart() 
+            
+        }
+        
+        
+        function changeInput(e) { 
+            e.target.value= Math.floor(e.target.value);
+            if(isNaN(e.target.value) || e.target.value<= 0){
+                    e.target.value = 1                    
+            }                         
+                updateCart()
+        }
+
+        function deleteItem(id) {
+            var danhSachSanPham = laydanhSachSanPhamTuLocalStorage()
+            
+            for(var i=0; i<danhSachSanPham.length;i++){
+                if (danhSachSanPham[i].idProduct == id) {
+                    danhSachSanPham.splice(i, 1);
+                    luuDsItemGioHangVaoStorage(danhSachSanPham);
+                    hienThiDsItem();
+                    break;
+                }
+            }
+           
+        }        
+                      
+        function updateCart() {
+            const cart = document.querySelector('.cart-infor') 
+            const cartItems= cart.querySelectorAll('.cart-tbody')
+            
+            let totalPrice = 0
+            let ip = 0
+            cartItems.forEach(cartItem => {
+                let intoPrice=0
+                const priceItem =  cartItem.querySelector('.cart-tbody__price')
+                const inputItem = cartItem.querySelector('.cart-tbody__input')
+                const moneyItem = cartItem.querySelector('.cart-tbody__money')
+                // chuyển đổi chuỗi sang number
+                const price =  parseFloat(priceItem.innerText)  
+                //   lấy gtri của thẻ input
+                var quality = inputItem.value
+                
+                // thành tiền mỗi sản phẩm và in ra htmml
+                intoPrice = intoPrice + (quality*price)
+                moneyItem.innerText =  parseFloat(intoPrice).toLocaleString('en') + 'đ'
+
+                // tổng tiền
+                totalPrice += intoPrice
+            })            
+            document.querySelector('.total-money-price').innerText = parseFloat(totalPrice).toLocaleString('en') + 'đ'
+        }
+        
+        // const done = document.querySelector('.cart-submit-btn')
+        const pay = document.querySelector('.pay')
+        function thanhToan(){
+            const totalMoney =document.querySelector('.total-money-price').innerText
+            pay.style.display='block'
+            pay.innerHTML=` <div class="pay-content">
+                <div class="pay-icon">
+                    <i class="far fa-check-circle"></i>
+                    <p>
+                        Bạn đã thanh toán ${totalMoney} 
+                    </p>
+                </div>
+                <div class="pay-text">
+                    ShoesShop xin cảm ơn!!
+                </div>`
+            localStorage.removeItem("danhsachItemGioHang")
+        }
+        
+
+        window.addEventListener('click',function(e){
+            if(e.target == pay){ 
+                pay.style.display="none"
+                hienThiDsItem()
+            }
+        })
+
+    </script>
+</body>
+</html>
